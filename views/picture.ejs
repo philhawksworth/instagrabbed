@@ -1,0 +1,9 @@
+
+
+<h2><%= title %></h2>
+<img src="<%= url %>" />
+<p>by <a href="/user/<%= user %>">@<%= user %></a></p>
+<a href="<%= link %>"><%= link %></a>
+<% for(var i=0; i<comments.length; i++) {%>
+    <li><p><%= comments[i].text %></p><a href="/user/<%= comments[i].from.username %>"><%= comments[i].from.username %></a></li>
+<% } %>

@@ -1,0 +1,5 @@
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<% for(var i=0; i<images.length; i++) {%>
+    <a href="/picture/<%= images[i].id %>"><img src="<%= images[i].url %>"></a>
+<% } %>
